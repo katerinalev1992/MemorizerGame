@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/stepview"
+            style="@style/MyText"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip" />
+
+        <Chronometer
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            style="@style/MyText"
+            android:id="@+id/timeview"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/field"/>
+
+</LinearLayout>
